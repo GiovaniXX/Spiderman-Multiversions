@@ -1,9 +1,9 @@
-@import url('reset.css');
-@import url('global.css');
-@import url('componentes/_navigator.css');
-@import url('componentes/_pills.css');
-@import url('componentes/_link-button.css');
-@import url('componentes/_gallery.css');
+@import url("reset.css");
+@import url("global.css");
+@import url("componentes/_navigator.css");
+@import url("componentes/_pills.css");
+@import url("componentes/_link-button.css");
+@import url("componentes/_gallery.css");
 
 .s-wrapper {
   display: flex;
@@ -73,7 +73,7 @@
 }
 
 .s-wrapper .s-main-content__top .s-description {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   max-width: 50%;
   padding: 20px;
   border-radius: 10px;
@@ -145,7 +145,7 @@
     height: auto;
     flex-direction: row;
     padding-right: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 3;
   }
   .s-wrapper {
