@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,98 +12,94 @@
 
 <body>
   <div class="s-wrapper">
-    <video autoplay loop>
+    <video autoplay loop muted playsinline>
       <source src="../../assets/videos/spiderman-2002-trailer.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo em HTML5.
     </video>
 
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1.png" alt="Spiderman">
-          </a>
-        </div>
+    <aside class="s-left-column" aria-label="Navegação lateral">
+      <nav class="navigator" aria-label="Navegação dos filmes">
+        <a href="../../index.html" class="navigator__icon" aria-label="Voltar para a Home">
+          <img src="../../assets/images/icons/spiderman1.png" alt="Ícone do Homem-Aranha">
+        </a>
         <ul>
-          <li><a href="spiderman1.html">01</a></li>
+          <li><a href="spiderman1.html" class="active" aria-current="page">01</a></li>
           <li><a href="spiderman2.html">02</a></li>
           <li><a href="spiderman3.html">03</a></li>
         </ul>
       </nav>
-    </div>
+    </aside>
 
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+    <main class="s-main-content">
+      <header class="s-main-content__top">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-tobey/movie-01/logo.png" alt="Spiderman (2002)"
-            title="Spiderman (2002)">
+          <img src="../../assets/images/spiderman-tobey/movie-01/logo.png" alt="Logo do filme Homem-Aranha (2002)"
+            title="Homem-Aranha (2002)">
         </div>
 
-        <div class="s-description">
-          <div class="pills">
-            <ul>
-              <li>Ano: 2002</li>
-              <li>Diretor: Sam Raimi</li>
-            </ul>
-          </div>
+        <section class="s-description" aria-label="Descrição do filme">
+          <ul class="pills">
+            <li>Ano: 2002</li>
+            <li>Diretor: Sam Raimi</li>
+          </ul>
           <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificado em uma
+            <p>
+              <strong>Sinopse:</strong>&nbsp;Depois de ser picado por uma aranha geneticamente modificada em uma
               demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los
-              para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém ao
-              presenciar o assasinato de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes para
+              para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém, ao
+              presenciar o assassinato de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes para
               proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico Duende
-              Verde.</p>
+              Verde.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div class="s-links">
+        <nav class="s-links" aria-label="Links rápidos">
           <ul>
             <li>
-              <a href="https://www.youtube.com/watch?v=TYMMOjBUPMM" class="link-button" target="_blank">
+              <a href="https://www.youtube.com/watch?v=TYMMOjBUPMM" class="link-button" target="_blank"
+                rel="noopener noreferrer" aria-label="Assistir trailer no YouTube">
                 <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
+                  <span class="play-icon" aria-hidden="true"></span>
                 </span>
-                <span class="label">Assistir trailler</span>
+                <span class="label">Assistir trailer</span>
               </a>
             </li>
-          </ul>
-        </div>
-        
-        <div class="s-links">
-          <ul>
             <li>
-              <a href="../../index.html" class="link-button">
+              <a href="../../index.html" class="link-button" aria-label="Voltar para a Home">
                 <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
+                  <span class="play-icon" aria-hidden="true"></span>
                 </span>
                 <span class="label">Home</span>
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      <div class="s-main-content__botton">
-        <div class="gallery">
-          <ul>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg">
-                <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <section class="s-main-content__bottom" aria-label="Galeria de imagens do filme">
+        <ul class="gallery">
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg">
+              <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png"
+                alt="Cena do filme Homem-Aranha (2002)">
+            </a>
+          </li>
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg">
+              <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png"
+                alt="Cena do filme Homem-Aranha (2002)">
+            </a>
+          </li>
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg">
+              <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png"
+                alt="Cena do filme Homem-Aranha (2002)">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>

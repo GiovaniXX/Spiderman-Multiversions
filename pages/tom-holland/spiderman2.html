@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -12,103 +12,88 @@
 
 <body>
   <div class="s-wrapper">
-    <video autoplay loop>
+    <video autoplay loop muted playsinline>
       <source src="../../assets/videos/spiderman2-2019-trailer.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em HTML5.
     </video>
-    <!--  Coluna da esquerda com menu (Left Column with menu)  -->
-    <div class="s-left-column">
-      <nav class="navigator">
-        <div class="navigator__icon">
-          <a href="../../index.html">
-            <img src="../../assets/images/icons/spiderman1-tom.png" alt="">
-          </a>
-        </div>
+    <aside class="s-left-column" aria-label="Navegação lateral">
+      <nav class="navigator" aria-label="Navegação dos filmes">
+        <a href="../../index.html" class="navigator__icon" aria-label="Voltar para a Home">
+          <img src="../../assets/images/icons/spiderman1-tom.png" alt="Ícone do Homem-Aranha">
+        </a>
         <ul>
           <li><a href="spiderman1.html">01</a></li>
-          <li><a href="#02" class="active">02</a></li>
+          <li><a href="#02" class="active" aria-current="page">02</a></li>
           <li><a href="spiderman3.html">03</a></li>
         </ul>
       </nav>
-    </div>
-    <!-- FIM - Coluna da esquerda com menu (Left Column with menu)  -->
+    </aside>
 
-    <div class="s-main-content">
-      <div class="s-main-content__top">
+    <main class="s-main-content">
+      <header class="s-main-content__top">
         <div class="s-logo">
-          <img src="../../assets/images/spiderman-ton/movie-02/logo.png" alt="Spiderman 2 (2005)"
-            title="Spiderman 2 (2005)" />
+          <img src="../../assets/images/spiderman-ton/movie-02/logo.png" alt="Logo do filme Homem-Aranha: Longe de Casa (2019)" title="Homem-Aranha: Longe de Casa (2019)" />
         </div>
 
-        <div class="s-description">
-          <div class="pills">
-            <ul>
-              <li>Ano: 2005</li>
-              <li>Diretor: Sam Raimi</li>
-            </ul>
-          </div>
+        <section class="s-description" aria-label="Descrição do filme">
+          <ul class="pills">
+            <li>Ano: 2019</li>
+            <li>Diretor: Jon Watts</li>
+          </ul>
           <div class="s-description__text">
-            <p><strong>Sinopse:</strong>&nbsp;Quando uma falha na experiência de fusão nuclear resulta em uma explosão
-              que mata sua esposa, o Dr. Otto Octavius é transformado em Dr. Octopus, um ciborgue com tentáculos de
-              metal. Doc Ock culpa o Homem-Aranha pelo acidente e quer vingança. Enquanto isso, o alter ego do herói,
-              Peter Parker, perde seus poderes. Para complicar as coisas, o seu melhor amigo odeia o Homem-Aranha e sua
-              amada fica noiva..</p>
+            <p>
+              <strong>Sinopse:</strong>&nbsp;Peter Parker embarca em uma viagem escolar pela Europa, mas seus planos mudam quando Nick Fury o recruta para enfrentar ameaças elementais ao lado de Mysterio. Enquanto lida com a perda de Tony Stark, Peter precisa descobrir o que significa ser o novo Homem-Aranha.
+            </p>
           </div>
-        </div>
+        </section>
 
-        <div class="s-links">
+        <nav class="s-links" aria-label="Links rápidos">
           <ul>
             <li>
-              <a href="#" class="link-button">
+              <a href="https://www.youtube.com/watch?v=DYYtuKyMtY8" class="link-button" target="_blank" rel="noopener noreferrer" aria-label="Assistir trailer no YouTube">
                 <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
+                  <span class="play-icon" aria-hidden="true"></span>
                 </span>
                 <span class="label">Assistir trailer</span>
               </a>
             </li>
-          </ul>
-        </div>
-
-        <div class="s-links">
-          <ul>
             <li>
-              <a href="../../index.html" class="link-button">
+              <a href="../../index.html" class="link-button" aria-label="Voltar para a Home">
                 <span class="icon">
-                  <div class="play-icon">&nbsp;</div>
+                  <span class="play-icon" aria-hidden="true"></span>
                 </span>
                 <span class="label">Home</span>
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      <div class="s-main-content__bottom">
-        <div class="gallery">
-          <ul>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-ton/movie-01/gallery/image-01.png">
-                <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-01.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-ton/movie-01/gallery/image-02.png">
-                <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-02.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-ton/movie-01/gallery/image-03.png">
-                <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-03.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a data-fancybox href="../../assets/images/spiderman-ton/movie-01/gallery/image-04.png">
-                <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-04.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+      <section class="s-main-content__bottom" aria-label="Galeria de imagens do filme">
+        <ul class="gallery">
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-ton/movie-01/gallery/image-01.png">
+              <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-01.png" alt="Cena do filme Homem-Aranha: Longe de Casa (2019)">
+            </a>
+          </li>
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-ton/movie-01/gallery/image-02.png">
+              <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-02.png" alt="Cena do filme Homem-Aranha: Longe de Casa (2019)">
+            </a>
+          </li>
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-ton/movie-01/gallery/image-03.png">
+              <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-03.png" alt="Cena do filme Homem-Aranha: Longe de Casa (2019)">
+            </a>
+          </li>
+          <li>
+            <a data-fancybox="gallery" href="../../assets/images/spiderman-ton/movie-01/gallery/image-04.png">
+              <img src="../../assets/images/spiderman-ton/movie-01/gallery/image-04.png" alt="Cena do filme Homem-Aranha: Longe de Casa (2019)">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>

@@ -1,22 +1,35 @@
-.gallery{
-  padding: 20px;
-  padding-left: 0;
+.gallery {
+  padding: 20px 0 20px 0;
 }
 
-.gallery ul{
+.gallery ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;           /* Permite quebrar linha em telas pequenas */
+  gap: 25px;                 /* Espaçamento entre itens, substitui margin-left */
+  list-style: none;          /* Remove marcadores padrão */
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
 }
 
-.gallery ul li{
-  margin-left: 25px;
+.gallery ul li {
+  margin: 0;                 /* gap já cuida do espaçamento */
 }
 
-.gallery ul li:first-child{
-  margin-left: 0px;
-}
-
-.gallery ul li a img{
-  border: solid 6px white;
+.gallery ul li a img {
+  border: 6px solid #fff;
   border-radius: 15px;
+  display: block;
+  max-width: 180px;          /* Limita o tamanho das imagens */
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery ul li a img:hover,
+.gallery ul li a img:focus {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  outline: none;
 }

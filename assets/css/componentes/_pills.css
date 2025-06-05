@@ -1,17 +1,22 @@
-.pills ul{
+.pills ul {
   display: flex;
   flex-direction: row;
+  gap: 10px; /* Espaçamento consistente entre os pills */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.pills ul li{
-  background-color: var(--primary-color);
-  color: white;
+.pills ul li {
+  background-color: var(--primary-color, #e62429);
+  color: #fff;
   padding: 5px 15px;
-  margin: 0 10px;
   border-radius: 20px;
   text-transform: uppercase;
-}
-
-.pills ul li:first-child{
-  margin-left: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0; /* gap já cuida do espaçamento */
+  display: flex;
+  align-items: center;
 }
